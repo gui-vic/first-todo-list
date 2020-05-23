@@ -3,7 +3,7 @@ var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 var listContainer = document.querySelector('#list-container')
 
-var todos = JSON.parse(localStorage.getItem('list_todos'));
+var todos = [];
 
 
 const renderTodos = () => {
@@ -43,7 +43,6 @@ const addTodo = () => {
     inputElement.value = '';
 
     renderTodos();
-    saveToStorage();
     }
 }
 
@@ -53,9 +52,5 @@ const deleteTodo = (pos) => {
     todos.splice(pos, 1);
 
     renderTodos();
-    saveToStorage();
 }
 
-const saveToStorage = () => {
-    localStorage.setItem('list_todos', JSON.stringify(todos));
-}
