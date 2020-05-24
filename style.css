@@ -20,19 +20,25 @@ body{
     align-items: center;
     height: 100vh;
     width: auto;
+    margin: 0 80px;
 }
 .controlls-container{
+    display:flex;
+    align-items: center;
+    justify-items: center;
     margin-bottom: 16px;
 }
 .controlls-container input{
+    margin-right: 10px;
     padding: 12px;
     color: #50fa7b;
     border-radius: 36px;
     border: none;
     background: #282a36;
 }
-.controlls-container input::placeholder{
+.controlls-container input:active ::placeholder{
     color: #50fa7a;
+
 }
 
 .controlls-container button{
@@ -48,7 +54,7 @@ body{
 
 
 .list-container{ 
-    width: 600px;
+    width: 100%;
     max-width: 600px;
     height: auto;
 
@@ -57,9 +63,12 @@ body{
     border-radius: 26px;
 
     color:	#bd93f9;
-
     padding: 24px;
     line-height: 36px;
+}
+
+h1{
+    text-align: center;
 }
 
 ul a {
