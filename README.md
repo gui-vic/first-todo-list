@@ -1,6 +1,6 @@
-# 📝My first todo list app
+# 📝Lista de tarefas 
 
-### Made with:
+### Feito com:
   - HTML
   - CSS
   - Javascript
